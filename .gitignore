@@ -1,0 +1,6 @@
+/venv/
+.web/
+.states/
+__pycache__/
+*.pyc
+.env
