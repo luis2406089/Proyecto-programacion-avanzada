@@ -35,3 +35,15 @@ Licensia de Git Hub
 
 > [!NOTE]
 > Acceder a `http://localhost:3000/` para ver la página
+
+```mermaid
+graph TD
+    A[Landing page] --> B(Registro)
+    B --> C{Registro}
+    C --> D[Inicio de sesion]
+    C --> E[Menu principal]
+    E --> F
+    D --> F[Pagina de inicio]
+    F --> E
+
+```
