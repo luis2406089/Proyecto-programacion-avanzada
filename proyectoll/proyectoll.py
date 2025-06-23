@@ -4,6 +4,7 @@ from proyectoll.pages.auth.register import register
 from sqlmodel import SQLModel
 from proyectoll.modelos.usuarios import Usuario
 from proyectoll.pages.home import home
+from proyectoll.pages.iniciado_sesion import dashboard
 
 class State(rx.State):
     """Estado compartido entre páginas"""
@@ -16,3 +17,4 @@ app = rx.App()
 app.add_page(home, route="/")
 app.add_page(login, route="/login")
 app.add_page(register, route="/register")
+app.add_page(dashboard, route="/iniciado_sesion")
